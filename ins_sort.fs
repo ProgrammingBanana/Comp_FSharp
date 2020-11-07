@@ -1,8 +1,8 @@
 ﻿(*
- * File: ins_sort.fs
+ * File: ins_sort_quiz.fs
  * Author: Daniel De Jesus 802-16-1676
  * Course COTI 4039 – Comparative Programming Languages
- * Date: Noviembre 5, 2020
+ * Date: Noviembre 7, 2020
  * Program that inserts into a sorted list and sorts unsorted lists 
  *)
 
@@ -41,3 +41,4 @@ let insertion_sort lst =
 printfn "Empty list inserting with tail recursion %A" (insert 4 [])
 printfn "Sorted list inserting with tail recursion %A" (insert 4 [1;2;3;5])
 printfn "Insertion sort using tail recursion %A" (insertion_sort [5;10;4;3;2;9;1;6;-7;8])
+printfn "Insertion sort on empty list %A" (insertion_sort [])
